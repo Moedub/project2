@@ -1,16 +1,22 @@
+from typing import Dict
+
 class TransactionLogger:
     """
     Handles logging of transactions to a file.
     """
-    def __init__(self):
-        self.log_file = "transactions.log"
 
-    def log_transaction(self, cart: dict, total_cost: float):
+    def __init__(self) -> None:
+        """
+        Initializes the transaction logger with a log file.
+        """
+        self.log_file: str = "transactions.log"
+
+    def log_transaction(self, cart: Dict[str, int], total_cost: float) -> None:
         """
         Logs the details of a transaction.
 
         Args:
-            cart (dict): The items in the cart and their quantities.
+            cart (Dict[str, int]): The items in the cart and their quantities.
             total_cost (float): The total cost of the transaction.
         """
         with open(self.log_file, "a") as file:
