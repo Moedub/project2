@@ -15,6 +15,7 @@ class Inventory:
             "Strawberries": 1.20,
             "Pineapple": 1.50,
             "Blueberries": 2.50,
+            "Kiwi": 0.25,
 
             # Vegetables
             "Carrots": 0.75,
@@ -25,6 +26,7 @@ class Inventory:
             "Onions": 0.40,
             "Spinach": 1.00,
             "Peppers": 1.30,
+            "Asparagus": 2.00,
 
             # Dairy
             "Milk": 1.50,
